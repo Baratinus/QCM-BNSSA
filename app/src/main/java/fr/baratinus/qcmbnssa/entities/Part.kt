@@ -1,8 +1,10 @@
 package fr.baratinus.qcmbnssa.entities
 
 import androidx.room.ColumnInfo
+import androidx.room.Entity
 import androidx.room.PrimaryKey
 
+@Entity
 data class Part(
     @PrimaryKey(autoGenerate = false)
     val id: Int,
