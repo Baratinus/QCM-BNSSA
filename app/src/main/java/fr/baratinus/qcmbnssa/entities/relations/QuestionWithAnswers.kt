@@ -8,6 +8,7 @@ import fr.baratinus.qcmbnssa.entities.Question
 data class QuestionWithAnswers(
 
     @Embedded val question: Question,
+
     @Relation(
         parentColumn = "id",
         entityColumn = "questionId"

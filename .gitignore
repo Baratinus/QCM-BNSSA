@@ -10,6 +10,8 @@
 .externalNativeBuild
 .cxx
 
+app/src/main/assets/
+
 # Keystore files
 *.jks
 
