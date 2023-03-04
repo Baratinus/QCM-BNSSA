@@ -1,4 +1,4 @@
-package fr.baratinus.qcmbnssa.entities
+package fr.baratinus.qcmbnssa.data.database.entities
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity

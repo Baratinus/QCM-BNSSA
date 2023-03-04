@@ -1,9 +1,9 @@
-package fr.baratinus.qcmbnssa.entities.relations
+package fr.baratinus.qcmbnssa.data.database.entities.relations
 
 import androidx.room.Embedded
 import androidx.room.Relation
-import fr.baratinus.qcmbnssa.entities.Answer
-import fr.baratinus.qcmbnssa.entities.Question
+import fr.baratinus.qcmbnssa.data.database.entities.Answer
+import fr.baratinus.qcmbnssa.data.database.entities.Question
 
 data class QuestionWithAnswers(
 

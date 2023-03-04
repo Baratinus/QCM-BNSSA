@@ -1,12 +1,12 @@
-package fr.baratinus.qcmbnssa.room
+package fr.baratinus.qcmbnssa.data.database
 
 import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
-import fr.baratinus.qcmbnssa.dao.PartDao
+import fr.baratinus.qcmbnssa.data.database.dao.PartDao
 
-import fr.baratinus.qcmbnssa.entities.Part
+import fr.baratinus.qcmbnssa.data.database.entities.Part
 
 @Database(entities = [Part::class], version = 1)
 abstract class BNSSADatabase : RoomDatabase() {

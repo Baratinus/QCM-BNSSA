@@ -1,8 +1,8 @@
-package fr.baratinus.qcmbnssa.dao
+package fr.baratinus.qcmbnssa.data.database.dao
 
 import androidx.room.Dao
 import androidx.room.Query
-import fr.baratinus.qcmbnssa.entities.Part
+import fr.baratinus.qcmbnssa.data.database.entities.Part
 
 @Dao
 interface PartDao {

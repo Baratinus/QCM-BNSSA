@@ -1,4 +1,4 @@
-package fr.baratinus.qcmbnssa
+package fr.baratinus.qcmbnssa.ui.views
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
