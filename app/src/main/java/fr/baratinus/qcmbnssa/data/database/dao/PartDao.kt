@@ -7,7 +7,10 @@ import fr.baratinus.qcmbnssa.data.database.entities.Part
 @Dao
 interface PartDao {
 
-    @Query("SELECT * FROM part")
+    @Query("SELECT * FROM Part")
     fun getAll() : List<Part>
+
+    @Query("SELECT * FROM Part WHERE id = :id")
+    fun getPartWithId(id: Int) : Part
 
 }
