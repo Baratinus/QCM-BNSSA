@@ -8,7 +8,8 @@ import androidx.room.PrimaryKey
 data class Part(
     @PrimaryKey(autoGenerate = false)
     val id: Int,
-    @ColumnInfo(name = "name") val name: String,
+
+    @ColumnInfo(name = "part") val part: String,
     @ColumnInfo(name = "minimum") val minimum: Int,
     @ColumnInfo(name = "maximum") val maximum: Int,
     @ColumnInfo(name = "version") val version: String

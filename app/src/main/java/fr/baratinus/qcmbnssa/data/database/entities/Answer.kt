@@ -10,7 +10,7 @@ data class Answer(
     val id: Int,
 
     @ColumnInfo val number: Int,
-    @ColumnInfo val rightAnswer: Boolean,
+    @ColumnInfo(name = "rightAnswer") val rightAnswer: Boolean,
     @ColumnInfo val answer: String,
 
     val questionId: Int
