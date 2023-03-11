@@ -5,7 +5,7 @@ import androidx.room.Entity
 import androidx.room.PrimaryKey
 
 @Entity
-data class Part(
+data class PartEntity(
     @PrimaryKey(autoGenerate = false)
     val id: Int,
 

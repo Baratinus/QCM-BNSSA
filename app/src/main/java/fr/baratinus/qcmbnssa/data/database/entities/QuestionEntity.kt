@@ -5,7 +5,7 @@ import androidx.room.Entity
 import androidx.room.PrimaryKey
 
 @Entity
-data class Question(
+data class QuestionEntity(
     @PrimaryKey(autoGenerate = false)
     val id: String,
 

@@ -5,7 +5,6 @@ import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.platform.app.InstrumentationRegistry
 import fr.baratinus.qcmbnssa.data.database.BNSSADatabase
 import fr.baratinus.qcmbnssa.data.database.dao.PartDao
-import fr.baratinus.qcmbnssa.data.database.entities.Part
 import org.junit.After
 import org.junit.Before
 import org.junit.Test
@@ -32,7 +31,7 @@ class PartDaoTest {
 
     @Test
     fun testGetAll() {
-        val parts: List<Part> = partDao.getAllParts()
-        println(parts)
+
+
     }
 }

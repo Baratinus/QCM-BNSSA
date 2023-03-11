@@ -2,17 +2,17 @@ package fr.baratinus.qcmbnssa.data.database.entities.relations
 
 import androidx.room.Embedded
 import androidx.room.Relation
-import fr.baratinus.qcmbnssa.data.database.entities.Answer
-import fr.baratinus.qcmbnssa.data.database.entities.Question
+import fr.baratinus.qcmbnssa.data.database.entities.AnswerEntity
+import fr.baratinus.qcmbnssa.data.database.entities.QuestionEntity
 
 data class QuestionWithAnswers(
 
-    @Embedded val question: Question,
+    @Embedded val question: QuestionEntity,
 
     @Relation(
         parentColumn = "id",
         entityColumn = "questionId"
     )
-    val answers: List<Answer>
+    val answers: List<AnswerEntity>
 
 )

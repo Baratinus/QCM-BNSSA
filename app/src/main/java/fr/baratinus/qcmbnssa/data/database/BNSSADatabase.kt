@@ -5,17 +5,17 @@ import androidx.room.*
 import fr.baratinus.qcmbnssa.data.database.dao.AnswerDao
 import fr.baratinus.qcmbnssa.data.database.dao.PartDao
 import fr.baratinus.qcmbnssa.data.database.dao.QuestionDao
-import fr.baratinus.qcmbnssa.data.database.entities.Answer
+import fr.baratinus.qcmbnssa.data.database.entities.AnswerEntity
 
-import fr.baratinus.qcmbnssa.data.database.entities.Part
-import fr.baratinus.qcmbnssa.data.database.entities.Question
+import fr.baratinus.qcmbnssa.data.database.entities.PartEntity
+import fr.baratinus.qcmbnssa.data.database.entities.QuestionEntity
 import fr.baratinus.qcmbnssa.data.repositories.BooleanConverter
 
 @Database(
     entities = [
-        Part::class,
-        Question::class,
-        Answer::class
+        PartEntity::class,
+        QuestionEntity::class,
+        AnswerEntity::class
                ],
     version = 1,
     /*autoMigrations = [
