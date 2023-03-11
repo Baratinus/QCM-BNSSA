@@ -14,7 +14,7 @@ interface PartDao {
     fun getAllParts() : LiveData<PartEntity>
 
     @Query("SELECT * FROM Part WHERE id = :id")
-    fun getPartWithId(id: Int) : LiveData<PartEntity>
+    fun getPartWithId(id: Int) : PartEntity
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insertPart(vararg part: PartEntity)
