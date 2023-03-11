@@ -2,7 +2,6 @@ package fr.baratinus.qcmbnssa.data.database
 
 import android.content.Context
 import androidx.room.*
-import androidx.room.migration.AutoMigrationSpec
 import fr.baratinus.qcmbnssa.data.database.dao.AnswerDao
 import fr.baratinus.qcmbnssa.data.database.dao.PartDao
 import fr.baratinus.qcmbnssa.data.database.dao.QuestionDao
@@ -49,7 +48,7 @@ abstract class BNSSADatabase : RoomDatabase() {
                 val instance = Room.databaseBuilder(
                     context.applicationContext,
                     BNSSADatabase::class.java,
-                    "BNSSA-Database"
+                    "BNSSA-database"
                 ).createFromAsset("database/BNSSA-database.db")
                     .build()
                 INSTANCE = instance

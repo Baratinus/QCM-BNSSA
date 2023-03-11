@@ -42,9 +42,13 @@ class MainActivity : ComponentActivity() {
         val questionDao: QuestionDao = BNSSADatabase.getDatabase(applicationContext).questionDao
         val answerDao: AnswerDao = BNSSADatabase.getDatabase(applicationContext).answerDao
 
-        //dao.getAll()
+        val part: Part = Part(7, "test", 1, 2, "1.0.0")
+
+        partDao.insertPart(part)
+
+        // partDao.getAllParts()
         // questionDao.getAll()
-        answerDao.getAll()
+        // answerDao.getAll()
 
     }
 }
