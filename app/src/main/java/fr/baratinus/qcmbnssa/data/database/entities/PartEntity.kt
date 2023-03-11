@@ -7,7 +7,7 @@ import androidx.room.PrimaryKey
 @Entity
 data class PartEntity(
     @PrimaryKey(autoGenerate = false)
-    val id: Int,
+    val idPart: Int,
 
     @ColumnInfo(name = "part") val part: String,
     @ColumnInfo(name = "minimum") val minimum: Int,

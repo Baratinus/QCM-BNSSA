@@ -7,7 +7,7 @@ import androidx.room.PrimaryKey
 @Entity
 data class QuestionEntity(
     @PrimaryKey(autoGenerate = false)
-    val id: String,
+    val idQuestion: Int,
 
     @ColumnInfo val question: String,
     @ColumnInfo val numberSuccess: Int,

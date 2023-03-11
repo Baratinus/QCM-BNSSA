@@ -7,7 +7,7 @@ import androidx.room.PrimaryKey
 @Entity
 data class AnswerEntity(
     @PrimaryKey(autoGenerate = false)
-    val id: Int,
+    val idAnswer: Int,
 
     @ColumnInfo val number: Int,
     @ColumnInfo(name = "rightAnswer") val rightAnswer: Boolean,
