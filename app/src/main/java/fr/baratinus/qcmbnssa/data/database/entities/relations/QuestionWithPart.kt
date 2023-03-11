@@ -5,14 +5,14 @@ import androidx.room.Relation
 import fr.baratinus.qcmbnssa.data.database.entities.PartEntity
 import fr.baratinus.qcmbnssa.data.database.entities.QuestionEntity
 
-data class PartWithQuestions(
+data class QuestionWithPart(
 
-    @Embedded val part: PartEntity,
+    @Embedded val questionEntity: QuestionEntity,
 
     @Relation(
-        parentColumn = "idPart",
+        parentColumn = "idQuestion",
         entityColumn = "partId"
     )
-    val questions: List<QuestionEntity>
+    val partEntity: PartEntity
 
 )
