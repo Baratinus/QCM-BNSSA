@@ -3,6 +3,7 @@ package fr.baratinus.qcmbnssa.data.mappers
 import fr.baratinus.qcmbnssa.data.database.entities.QuestionEntity
 import fr.baratinus.qcmbnssa.data.database.entities.relations.QuestionWithPart
 import fr.baratinus.qcmbnssa.data.database.entities.relations.QuestionWithPartAndAnswers
+import fr.baratinus.qcmbnssa.data.models.Answer
 import fr.baratinus.qcmbnssa.data.models.Part
 import fr.baratinus.qcmbnssa.data.models.Question
 
@@ -41,8 +42,9 @@ object QuestionMapper {
                 questionWithPartAndAnswers.questionWithPart.partEntity.maximum,
                 questionWithPartAndAnswers.questionWithPart.partEntity.version
             ),
-            null
-            // SEQUENCE
+            questionWithPartAndAnswers.answers.map {
+                a -> Answer(a.idAnswer, a.number, a.rightAnswer, a.answer, null)
+            }
         )
     }
 }
