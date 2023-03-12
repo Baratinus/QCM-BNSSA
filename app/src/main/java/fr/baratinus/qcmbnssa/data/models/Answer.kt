@@ -5,5 +5,5 @@ data class Answer(
     var number: Int,
     var rightAnswer: Boolean,
     var answer: String,
-    var question: Question
+    var question: Question?
 )
