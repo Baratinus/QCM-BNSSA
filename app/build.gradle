@@ -91,4 +91,8 @@ dependencies {
     // Coroutine Lifecycle Scopes
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$room_version"
     implementation "androidx.lifecycle:lifecycle-runtime-ktx:$room_version"
+
+    // Material design
+    implementation "androidx.compose.material3:material3:1.0.1"
+    implementation "androidx.compose.material3:material3-window-size-class:1.0.1"
 }
