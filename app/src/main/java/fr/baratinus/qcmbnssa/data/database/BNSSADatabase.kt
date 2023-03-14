@@ -49,7 +49,7 @@ abstract class BNSSADatabase : RoomDatabase() {
                     context.applicationContext,
                     BNSSADatabase::class.java,
                     "BNSSA-database"
-                ).createFromAsset("database/BNSSA-database.db")
+                ).createFromAsset("database/BNSSA-database")
                     .build()
                 INSTANCE = instance
                 return instance
