@@ -19,7 +19,6 @@ class PartDaoTest {
     fun setup() {
         val context = InstrumentationRegistry.getInstrumentation().context
         bnssaDatabase = Room.inMemoryDatabaseBuilder(context, BNSSADatabase::class.java)
-            .createFromAsset("database/BNSSA-database.db")
             .build()
         partDao = bnssaDatabase.partDao
     }
@@ -27,11 +26,5 @@ class PartDaoTest {
     @After
     fun cleanup() {
         bnssaDatabase.close()
-    }
-
-    @Test
-    fun testGetAll() {
-
-
     }
 }
