@@ -12,7 +12,7 @@
         android:theme="@style/Theme.QCMBNSSA"
         tools:targetApi="31">
         <activity
-            android:name=".ui.views.MainActivity"
+            android:name=".ui.MainActivity"
             android:exported="true"
             android:theme="@style/Theme.QCMBNSSA">
             <intent-filter>

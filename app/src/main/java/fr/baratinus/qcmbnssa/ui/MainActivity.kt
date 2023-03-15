@@ -1,4 +1,4 @@
-package fr.baratinus.qcmbnssa.ui.views
+package fr.baratinus.qcmbnssa.ui
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -30,18 +30,6 @@ class MainActivity : ComponentActivity() {
                 }
             }
         }
-
-
-        // Part(1, "test", 1, 2, "1.0.0")
-
-        val partDao: PartDao = BNSSADatabase.getDatabase(this).partDao
-        val questionDao: QuestionDao = BNSSADatabase.getDatabase(this).questionDao
-        val answerDao: AnswerDao = BNSSADatabase.getDatabase(this).answerDao
-
-        partDao.getAllParts()
-        // questionDao.getAll()
-        // answerDao.getAll()
-
     }
 }
 
