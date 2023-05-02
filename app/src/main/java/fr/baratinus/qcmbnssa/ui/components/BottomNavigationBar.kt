@@ -12,30 +12,33 @@ import androidx.compose.material.icons.filled.Star
 import androidx.compose.material3.Icon
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.navigation.NavController
+import fr.baratinus.qcmbnssa.ui.screens.Screen
 
 @Composable
-fun BottomNavigationBar() {
+fun BottomNavigationBar(navController: NavController) {
     BottomNavigation (
         modifier = Modifier.fillMaxWidth(),
-        backgroundColor = MaterialTheme.colors.primary
+        backgroundColor = MaterialTheme.colors.background,
+        contentColor = MaterialTheme.colors.onBackground
     ) {
         BottomNavigationItem(
             icon = {Icon(Icons.Filled.Home, contentDescription = null)},
             label = { Text(text = "accueil")},
             selected = true,
-            onClick = { /*TODO*/ }
+            onClick = { navController.navigate(Screen.Home.route) }
         )
         BottomNavigationItem(
             icon = {Icon(Icons.Filled.Star, contentDescription = null)},
-            label = { Text(text = "stats")},
+            label = { Text(text = "statistiques")},
             selected = true,
-            onClick = { /*TODO*/ }
+            onClick = { navController.navigate(Screen.Statistics.route) }
         )
         BottomNavigationItem(
             icon = {Icon(Icons.Filled.Settings, contentDescription = null)},
-            label = { Text(text = "paramètre")},
+            label = { Text(text = "paramètres")},
             selected = true,
-            onClick = { /*TODO*/ }
+            onClick = { navController.navigate(Screen.Settings.route) }
         )
     }
 }
